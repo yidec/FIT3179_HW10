@@ -38,7 +38,7 @@
 					"lookup": "properties.NAME",
 					"from": {
 						"data": {
-							"url": "Human_life_Expectancy.csv"
+							"url": "https://raw.githubusercontent.com/yidec/FIT3179_HW9/main/data/Human_life_Expectancy.csv"
 						},
 						"key": "Country",
 						"fields": ["Life_exp"]
