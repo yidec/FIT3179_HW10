@@ -1,6 +1,9 @@
 {
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"title": "Life Expectancy for countries (Year 2019)",
+	"title": {
+		"text": "Life Expectancy for countries (Year 2019)",
+		"fontSize": 18
+	},
 	"width": 800,
 	"height": 500,
 	"data": {
@@ -41,7 +44,9 @@
 							"url": "https://raw.githubusercontent.com/yidec/FIT3179_HW9/main/data/Human_life_Expectancy.csv"
 						},
 						"key": "Country",
-						"fields": ["Life_exp"]
+						"fields": [
+							"Life_exp"
+						]
 					}
 				}
 			],
@@ -54,6 +59,10 @@
 					"type": "quantitative",
 					"scale": {
 						"type": "linear"
+					},
+					"legend": {
+						"title": "Life Expectancy(Age)",
+						"titleFontSize": 13
 					}
 				},
 				"tooltip": [
@@ -65,7 +74,7 @@
 					{
 						"field": "Life_exp",
 						"type": "quantitative",
-						"title": "Life Expectancy (Year)" 
+						"title": "Life Expectancy (Year)"
 					}
 				]
 			}
