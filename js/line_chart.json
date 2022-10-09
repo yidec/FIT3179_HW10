@@ -1,8 +1,11 @@
 {
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 	"width": 800,
-	"height": 600,
-	"title": "Average Life Expectancy in the Countries of different Continents",
+	"height": 500,
+	"title": {
+		"text": "Average Life Expectancy in the Countries of different Continents",
+		"fontSize": 18
+	},
 	"data": {
 	  "url": "https://raw.githubusercontent.com/yidec/FIT3179_HW10/main/data/Compliled_Life_Expectancy_no_null.csv"
 	},
@@ -49,14 +52,14 @@
 		"field": "Year",
 		"type": "quantitative",
 		"title": "Year",
-		"axis": {},
+		"axis": {"titleFontSize":13},
 		"scale": {"type": "linear", "domain": [1990, 2019]}
 	  },
 	  "y": {
 		"field": "mean_life_exp",
 		"type": "quantitative",
 		"title": "Average Life Expectancy (Age)",
-		"axis": {"tickCount": 10, "format": ".0f"},
+		"axis": {"tickCount": 10, "format": ".0f", "titleFontSize":13},
 		"scale": {"type": "linear", "domain": [50, 90]}
 	  }
 	},
@@ -82,6 +85,10 @@
 				"#a6cee3",
 				"#a65628"
 			  ]
+			},
+			"legend": {
+				"title": "Continents",
+				"titleFontSize": 13
 			}
 		  },
 		  "opacity": {"value": 1}
